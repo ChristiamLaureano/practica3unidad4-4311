@@ -13,5 +13,12 @@ namespace GestorDeFormularios
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void conversorDeDivisasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Conversordivisas frm = new Conversordivisas();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

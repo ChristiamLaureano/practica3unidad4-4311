@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             menuStrip1 = new MenuStrip();
             registroDePersonaToolStripMenuItem = new ToolStripMenuItem();
+            conversorDeDivisasToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { registroDePersonaToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { registroDePersonaToolStripMenuItem, conversorDeDivisasToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -49,6 +50,13 @@
             registroDePersonaToolStripMenuItem.Size = new Size(123, 20);
             registroDePersonaToolStripMenuItem.Text = "Registro de persona";
             registroDePersonaToolStripMenuItem.Click += registroDePersonaToolStripMenuItem_Click;
+            // 
+            // conversorDeDivisasToolStripMenuItem
+            // 
+            conversorDeDivisasToolStripMenuItem.Name = "conversorDeDivisasToolStripMenuItem";
+            conversorDeDivisasToolStripMenuItem.Size = new Size(128, 20);
+            conversorDeDivisasToolStripMenuItem.Text = "Conversor de Divisas";
+            conversorDeDivisasToolStripMenuItem.Click += conversorDeDivisasToolStripMenuItem_Click;
             // 
             // frmPrincipal
             // 
@@ -70,5 +78,6 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem registroDePersonaToolStripMenuItem;
+        private ToolStripMenuItem conversorDeDivisasToolStripMenuItem;
     }
 }
