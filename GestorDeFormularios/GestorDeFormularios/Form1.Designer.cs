@@ -32,40 +32,51 @@
             menuStrip1 = new MenuStrip();
             registroDePersonaToolStripMenuItem = new ToolStripMenuItem();
             conversorDeDivisasToolStripMenuItem = new ToolStripMenuItem();
+            cálculoDeImpuestosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { registroDePersonaToolStripMenuItem, conversorDeDivisasToolStripMenuItem });
+            menuStrip1.ImageScalingSize = new Size(24, 24);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { registroDePersonaToolStripMenuItem, conversorDeDivisasToolStripMenuItem, cálculoDeImpuestosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Padding = new Padding(9, 3, 0, 3);
+            menuStrip1.Size = new Size(1143, 35);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // registroDePersonaToolStripMenuItem
             // 
             registroDePersonaToolStripMenuItem.Name = "registroDePersonaToolStripMenuItem";
-            registroDePersonaToolStripMenuItem.Size = new Size(123, 20);
+            registroDePersonaToolStripMenuItem.Size = new Size(187, 29);
             registroDePersonaToolStripMenuItem.Text = "Registro de persona";
             registroDePersonaToolStripMenuItem.Click += registroDePersonaToolStripMenuItem_Click;
             // 
             // conversorDeDivisasToolStripMenuItem
             // 
             conversorDeDivisasToolStripMenuItem.Name = "conversorDeDivisasToolStripMenuItem";
-            conversorDeDivisasToolStripMenuItem.Size = new Size(128, 20);
+            conversorDeDivisasToolStripMenuItem.Size = new Size(194, 29);
             conversorDeDivisasToolStripMenuItem.Text = "Conversor de Divisas";
             conversorDeDivisasToolStripMenuItem.Click += conversorDeDivisasToolStripMenuItem_Click;
             // 
+            // cálculoDeImpuestosToolStripMenuItem
+            // 
+            cálculoDeImpuestosToolStripMenuItem.Name = "cálculoDeImpuestosToolStripMenuItem";
+            cálculoDeImpuestosToolStripMenuItem.Size = new Size(199, 29);
+            cálculoDeImpuestosToolStripMenuItem.Text = "Cálculo de Impuestos";
+            cálculoDeImpuestosToolStripMenuItem.Click += cálculoDeImpuestosToolStripMenuItem_Click;
+            // 
             // frmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "frmPrincipal";
             Text = "Gestor De Formularios";
             menuStrip1.ResumeLayout(false);
@@ -79,5 +90,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem registroDePersonaToolStripMenuItem;
         private ToolStripMenuItem conversorDeDivisasToolStripMenuItem;
+        private ToolStripMenuItem cálculoDeImpuestosToolStripMenuItem;
     }
 }

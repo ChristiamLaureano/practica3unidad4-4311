@@ -73,6 +73,16 @@ namespace GestorDeFormularios.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap impuesto_sobre_la_renta {
+            get {
+                object obj = ResourceManager.GetObject("impuesto-sobre-la-renta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap registrado {
             get {
                 object obj = ResourceManager.GetObject("registrado", resourceCulture);

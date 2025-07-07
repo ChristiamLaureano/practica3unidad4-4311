@@ -20,5 +20,12 @@ namespace GestorDeFormularios
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void cálculoDeImpuestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cálculo_de_Impuestos frm = new Cálculo_de_Impuestos();
+            frm.MdiParent = this;
+            frm.Show(); 
+        }
     }
 }
