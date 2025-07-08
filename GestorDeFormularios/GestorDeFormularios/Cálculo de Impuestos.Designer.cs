@@ -40,13 +40,14 @@
             pictureBox1 = new PictureBox();
             label5 = new Label();
             label6 = new Label();
+            btnLimpiar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtMonto
             // 
             txtMonto.Location = new Point(126, 127);
-            txtMonto.Margin = new Padding(2, 2, 2, 2);
+            txtMonto.Margin = new Padding(2);
             txtMonto.Name = "txtMonto";
             txtMonto.Size = new Size(266, 23);
             txtMonto.TabIndex = 0;
@@ -91,19 +92,19 @@
             // 
             cmbImpuesto.FormattingEnabled = true;
             cmbImpuesto.Location = new Point(126, 195);
-            cmbImpuesto.Margin = new Padding(2, 2, 2, 2);
+            cmbImpuesto.Margin = new Padding(2);
             cmbImpuesto.Name = "cmbImpuesto";
             cmbImpuesto.Size = new Size(266, 23);
             cmbImpuesto.TabIndex = 4;
             // 
             // btnCalcular
             // 
-            btnCalcular.BackColor = Color.Teal;
+            btnCalcular.BackColor = Color.DarkOrange;
             btnCalcular.FlatStyle = FlatStyle.Flat;
             btnCalcular.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCalcular.ForeColor = Color.White;
-            btnCalcular.Location = new Point(186, 236);
-            btnCalcular.Margin = new Padding(2, 2, 2, 2);
+            btnCalcular.Location = new Point(162, 245);
+            btnCalcular.Margin = new Padding(2);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(145, 34);
             btnCalcular.TabIndex = 5;
@@ -139,7 +140,7 @@
             // 
             pictureBox1.Image = Properties.Resources.impuesto_sobre_la_renta;
             pictureBox1.Location = new Point(456, 95);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(108, 80);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -172,12 +173,28 @@
             label6.TabIndex = 10;
             label6.Text = "____________________________________________";
             // 
+            // btnLimpiar
+            // 
+            btnLimpiar.BackColor = Color.Teal;
+            btnLimpiar.FlatStyle = FlatStyle.Flat;
+            btnLimpiar.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLimpiar.ForeColor = Color.White;
+            btnLimpiar.Location = new Point(355, 245);
+            btnLimpiar.Margin = new Padding(2);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(145, 34);
+            btnLimpiar.TabIndex = 11;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
+            // 
             // Cálculo_de_Impuestos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(685, 423);
+            Controls.Add(btnLimpiar);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(pictureBox1);
@@ -190,7 +207,7 @@
             Controls.Add(label1);
             Controls.Add(txtMonto);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Cálculo_de_Impuestos";
             Text = "Cálculo_de_Impuestos";
             Load += Cálculo_de_Impuestos_Load;
@@ -212,5 +229,6 @@
         private PictureBox pictureBox1;
         private Label label5;
         private Label label6;
+        private Button btnLimpiar;
     }
 }

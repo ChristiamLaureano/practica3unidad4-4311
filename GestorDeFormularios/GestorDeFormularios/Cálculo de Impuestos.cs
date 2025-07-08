@@ -52,5 +52,14 @@ namespace GestorDeFormularios
 
             }
         }
+
+        //limpiar los campos
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtMonto.Clear();
+            cmbImpuesto.SelectedIndex = -1;
+            lblTotal.Text = "0.00";
+        }
     }
 }

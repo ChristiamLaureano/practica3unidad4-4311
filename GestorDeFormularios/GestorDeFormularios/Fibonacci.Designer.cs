@@ -42,8 +42,8 @@
             // 
             // txtLimite
             // 
-            txtLimite.Location = new Point(116, 139);
-            txtLimite.Margin = new Padding(2, 2, 2, 2);
+            txtLimite.Location = new Point(114, 156);
+            txtLimite.Margin = new Padding(2);
             txtLimite.Name = "txtLimite";
             txtLimite.Size = new Size(217, 23);
             txtLimite.TabIndex = 0;
@@ -54,10 +54,10 @@
             btnGenerar.FlatStyle = FlatStyle.Flat;
             btnGenerar.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGenerar.ForeColor = Color.White;
-            btnGenerar.Location = new Point(148, 212);
-            btnGenerar.Margin = new Padding(2, 2, 2, 2);
+            btnGenerar.Location = new Point(171, 218);
+            btnGenerar.Margin = new Padding(2);
             btnGenerar.Name = "btnGenerar";
-            btnGenerar.Size = new Size(130, 31);
+            btnGenerar.Size = new Size(135, 39);
             btnGenerar.TabIndex = 1;
             btnGenerar.Text = "Generar";
             btnGenerar.UseVisualStyleBackColor = false;
@@ -69,7 +69,7 @@
             txtResultado.Font = new Font("Arial Black", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtResultado.ForeColor = Color.DarkBlue;
             txtResultado.Location = new Point(100, 284);
-            txtResultado.Margin = new Padding(2, 2, 2, 2);
+            txtResultado.Margin = new Padding(2);
             txtResultado.Multiline = true;
             txtResultado.Name = "txtResultado";
             txtResultado.ReadOnly = true;
@@ -82,7 +82,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Arial Black", 11F, FontStyle.Bold);
             label1.ForeColor = Color.Indigo;
-            label1.Location = new Point(116, 110);
+            label1.Location = new Point(114, 127);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(211, 22);
@@ -104,8 +104,8 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.fibonacci;
-            pictureBox1.Location = new Point(430, 110);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Location = new Point(428, 127);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(141, 68);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -118,10 +118,10 @@
             btnLimpiar.FlatStyle = FlatStyle.Flat;
             btnLimpiar.Font = new Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLimpiar.ForeColor = Color.White;
-            btnLimpiar.Location = new Point(326, 212);
-            btnLimpiar.Margin = new Padding(2, 2, 2, 2);
+            btnLimpiar.Location = new Point(349, 218);
+            btnLimpiar.Margin = new Padding(2);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(130, 31);
+            btnLimpiar.Size = new Size(135, 39);
             btnLimpiar.TabIndex = 7;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = false;
@@ -154,7 +154,7 @@
             Controls.Add(btnGenerar);
             Controls.Add(txtLimite);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Fibonacci";
             Text = "Fibonacci";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
