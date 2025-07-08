@@ -33,13 +33,14 @@
             registroDePersonaToolStripMenuItem = new ToolStripMenuItem();
             conversorDeDivisasToolStripMenuItem = new ToolStripMenuItem();
             cálculoDeImpuestosToolStripMenuItem = new ToolStripMenuItem();
+            generadorDeLaSerieFibonacciToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { registroDePersonaToolStripMenuItem, conversorDeDivisasToolStripMenuItem, cálculoDeImpuestosToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { registroDePersonaToolStripMenuItem, conversorDeDivisasToolStripMenuItem, cálculoDeImpuestosToolStripMenuItem, generadorDeLaSerieFibonacciToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(9, 3, 0, 3);
@@ -68,6 +69,13 @@
             cálculoDeImpuestosToolStripMenuItem.Text = "Cálculo de Impuestos";
             cálculoDeImpuestosToolStripMenuItem.Click += cálculoDeImpuestosToolStripMenuItem_Click;
             // 
+            // generadorDeLaSerieFibonacciToolStripMenuItem
+            // 
+            generadorDeLaSerieFibonacciToolStripMenuItem.Name = "generadorDeLaSerieFibonacciToolStripMenuItem";
+            generadorDeLaSerieFibonacciToolStripMenuItem.Size = new Size(276, 29);
+            generadorDeLaSerieFibonacciToolStripMenuItem.Text = "Generador de la Serie Fibonacci";
+            generadorDeLaSerieFibonacciToolStripMenuItem.Click += generadorDeLaSerieFibonacciToolStripMenuItem_Click;
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -91,5 +99,6 @@
         private ToolStripMenuItem registroDePersonaToolStripMenuItem;
         private ToolStripMenuItem conversorDeDivisasToolStripMenuItem;
         private ToolStripMenuItem cálculoDeImpuestosToolStripMenuItem;
+        private ToolStripMenuItem generadorDeLaSerieFibonacciToolStripMenuItem;
     }
 }

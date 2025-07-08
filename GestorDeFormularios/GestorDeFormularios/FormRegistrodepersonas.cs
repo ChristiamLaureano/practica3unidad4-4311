@@ -18,7 +18,7 @@ namespace GestorDeFormularios
         }
 
 
-
+        // Evento para agregar una nueva fila al DataGridView cuando se hace clic en el botón "Agregar"
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             dgvPersonas.Rows.Add(
@@ -28,11 +28,13 @@ namespace GestorDeFormularios
                 txtOcupación.Text, cmbEstadoCivil.SelectedItem, cmbSexo.SelectedItem,
                 txtNacionalidad.Text
                 );
+            // Limpiar los campos después de agregar la fila
             LimpiarCampos();
 
         }
 
-        //metodo para limpiar los campos de texto y combobox
+        // Método para limpiar los campos de entrada
+
         private void LimpiarCampos()
         {
             foreach (Control ctrl in this.Controls)
@@ -52,12 +54,13 @@ namespace GestorDeFormularios
             }
         }
 
+
         private void FrmRegistropersonas_Load(object sender, EventArgs e)
         {
-            // Asegúrate de que el DataGridView tenga 12 columnas
+            //  12 columnas
             dgvPersonas.ColumnCount = 12;
 
-            // Configura los encabezados de las columnas
+            // Configurar los encabezados de las columnas
             dgvPersonas.Columns[0].Name = "Nombre";
             dgvPersonas.Columns[1].Name = "Apellido";
             dgvPersonas.Columns[2].Name = "Cédula";
@@ -78,6 +81,37 @@ namespace GestorDeFormularios
         private void label13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //limpiar los campos al hacer clic en el botón "Limpiar"
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        //eliminar la fila seleccionada al hacer clic en el botón "Eliminar"
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvPersonas.Rows.RemoveAt(dgvPersonas.SelectedRows[0].Index);
+            }
+
+            catch
+            {
+                MessageBox.Show("Debe seleccionar una fila para eliminarla.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        //ordenar por nombre al hacer clic en el botón "Ordenar"
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            dgvPersonas.Sort(dgvPersonas.Columns[0], ListSortDirection.Ascending);
         }
     }
 }

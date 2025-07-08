@@ -40,5 +40,10 @@ namespace GestorDeFormularios
 
             lblResultado.Text = $"{resultado:f2}";
         }
+
+        private void Conversordivisas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

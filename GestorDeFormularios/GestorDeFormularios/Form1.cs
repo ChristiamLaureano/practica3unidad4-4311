@@ -25,7 +25,14 @@ namespace GestorDeFormularios
         {
             Cálculo_de_Impuestos frm = new Cálculo_de_Impuestos();
             frm.MdiParent = this;
-            frm.Show(); 
+            frm.Show();
+        }
+
+        private void generadorDeLaSerieFibonacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fibonacci frm = new Fibonacci();
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }
