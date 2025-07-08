@@ -42,6 +42,7 @@
             pictureBox1 = new PictureBox();
             label3 = new Label();
             label8 = new Label();
+            btnLimpiar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -79,7 +80,7 @@
             btnConvertir.FlatStyle = FlatStyle.Flat;
             btnConvertir.Font = new Font("Arial Black", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnConvertir.ForeColor = SystemColors.ButtonHighlight;
-            btnConvertir.Location = new Point(289, 241);
+            btnConvertir.Location = new Point(126, 241);
             btnConvertir.Name = "btnConvertir";
             btnConvertir.Size = new Size(134, 33);
             btnConvertir.TabIndex = 3;
@@ -156,7 +157,7 @@
             // 
             pictureBox1.Image = Properties.Resources.cambio_de_divisas;
             pictureBox1.Location = new Point(412, 94);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(113, 58);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -187,12 +188,27 @@
             label8.TabIndex = 13;
             label8.Text = "_______________________________________";
             // 
+            // btnLimpiar
+            // 
+            btnLimpiar.BackColor = Color.Goldenrod;
+            btnLimpiar.FlatStyle = FlatStyle.Flat;
+            btnLimpiar.Font = new Font("Arial Black", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLimpiar.ForeColor = SystemColors.ButtonHighlight;
+            btnLimpiar.Location = new Point(347, 241);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(134, 33);
+            btnLimpiar.TabIndex = 14;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
+            // 
             // Conversordivisas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(666, 399);
+            Controls.Add(btnLimpiar);
             Controls.Add(label8);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
@@ -230,5 +246,6 @@
         private PictureBox pictureBox1;
         private Label label3;
         private Label label8;
+        private Button btnLimpiar;
     }
 }

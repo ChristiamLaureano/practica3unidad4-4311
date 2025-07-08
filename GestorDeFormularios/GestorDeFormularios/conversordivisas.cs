@@ -45,5 +45,15 @@ namespace GestorDeFormularios
         {
 
         }
+
+
+        //limpiar los campos
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtmonto.Clear();
+            cmbOrigen.SelectedIndex = -1;
+            cmbDestino.SelectedIndex = -1;
+            lblResultado.Text = "0.00";
+        }
     }
 }
