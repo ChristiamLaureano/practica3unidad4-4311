@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Conversordivisas));
             txtmonto = new TextBox();
             cmbOrigen = new ComboBox();
             cmbDestino = new ComboBox();
@@ -39,17 +38,15 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            pictureBox1 = new PictureBox();
             label3 = new Label();
             label8 = new Label();
             btnLimpiar = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtmonto
             // 
             txtmonto.Font = new Font("Microsoft YaHei UI", 9F);
-            txtmonto.Location = new Point(126, 115);
+            txtmonto.Location = new Point(238, 117);
             txtmonto.Name = "txtmonto";
             txtmonto.Size = new Size(159, 23);
             txtmonto.TabIndex = 0;
@@ -59,7 +56,7 @@
             cmbOrigen.Font = new Font("Microsoft YaHei UI", 9F);
             cmbOrigen.FormattingEnabled = true;
             cmbOrigen.Items.AddRange(new object[] { "USD", "EUR", "GBP", "JPY", "CNY", "DOP" });
-            cmbOrigen.Location = new Point(123, 195);
+            cmbOrigen.Location = new Point(129, 183);
             cmbOrigen.Name = "cmbOrigen";
             cmbOrigen.Size = new Size(180, 25);
             cmbOrigen.TabIndex = 1;
@@ -69,14 +66,14 @@
             cmbDestino.Font = new Font("Microsoft YaHei UI", 9F);
             cmbDestino.FormattingEnabled = true;
             cmbDestino.Items.AddRange(new object[] { "USD", "EUR", "GBP", "JPY", "CNY", "DOP" });
-            cmbDestino.Location = new Point(347, 195);
+            cmbDestino.Location = new Point(347, 183);
             cmbDestino.Name = "cmbDestino";
             cmbDestino.Size = new Size(180, 25);
             cmbDestino.TabIndex = 2;
             // 
             // btnConvertir
             // 
-            btnConvertir.BackColor = Color.DarkGreen;
+            btnConvertir.BackColor = Color.Red;
             btnConvertir.FlatStyle = FlatStyle.Flat;
             btnConvertir.Font = new Font("Arial Black", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnConvertir.ForeColor = SystemColors.ButtonHighlight;
@@ -92,8 +89,8 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Black", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.DarkGreen;
-            label1.Location = new Point(99, 17);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(180, 22);
             label1.Name = "label1";
             label1.Size = new Size(265, 31);
             label1.TabIndex = 4;
@@ -103,7 +100,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial Black", 11F, FontStyle.Bold);
-            label2.ForeColor = Color.DarkGreen;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(123, 326);
             label2.Name = "label2";
             label2.Size = new Size(98, 22);
@@ -124,8 +121,8 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial Black", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.DarkGreen;
-            label4.Location = new Point(124, 94);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(240, 81);
             label4.Name = "label4";
             label4.Size = new Size(157, 22);
             label4.TabIndex = 7;
@@ -135,8 +132,8 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial Black", 11F, FontStyle.Bold);
-            label5.ForeColor = Color.DarkGreen;
-            label5.Location = new Point(123, 173);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(129, 158);
             label5.Name = "label5";
             label5.Size = new Size(131, 22);
             label5.TabIndex = 8;
@@ -146,30 +143,19 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial Black", 11F, FontStyle.Bold);
-            label6.ForeColor = Color.DarkGreen;
-            label6.Location = new Point(347, 173);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(347, 158);
             label6.Name = "label6";
             label6.Size = new Size(140, 22);
             label6.TabIndex = 9;
             label6.Text = "Moneda destino";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.cambio_de_divisas;
-            pictureBox1.Location = new Point(412, 94);
-            pictureBox1.Margin = new Padding(2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(113, 58);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
-            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Broadway", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.DarkGreen;
-            label3.Location = new Point(99, 44);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(99, 53);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(439, 21);
@@ -180,7 +166,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Broadway", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.DarkGreen;
+            label8.ForeColor = Color.Black;
             label8.Location = new Point(99, 290);
             label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
@@ -190,7 +176,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.BackColor = Color.Goldenrod;
+            btnLimpiar.BackColor = Color.Green;
             btnLimpiar.FlatStyle = FlatStyle.Flat;
             btnLimpiar.Font = new Font("Arial Black", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLimpiar.ForeColor = SystemColors.ButtonHighlight;
@@ -211,7 +197,6 @@
             Controls.Add(btnLimpiar);
             Controls.Add(label8);
             Controls.Add(label3);
-            Controls.Add(pictureBox1);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -222,11 +207,9 @@
             Controls.Add(cmbDestino);
             Controls.Add(cmbOrigen);
             Controls.Add(txtmonto);
-            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Conversordivisas";
             Text = "conversordivisas";
             Load += Conversordivisas_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -243,7 +226,6 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private PictureBox pictureBox1;
         private Label label3;
         private Label label8;
         private Button btnLimpiar;

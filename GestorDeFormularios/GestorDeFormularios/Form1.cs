@@ -34,5 +34,10 @@ namespace GestorDeFormularios
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
