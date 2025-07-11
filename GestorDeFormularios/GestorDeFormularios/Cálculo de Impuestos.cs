@@ -22,7 +22,7 @@ namespace GestorDeFormularios
             cmbImpuesto.Items.Add("ITBIS 18%");
             cmbImpuesto.Items.Add("Impuesto Selectivo 10%");
             cmbImpuesto.Items.Add("Impuesto Municipal 5%");
-            cmbImpuesto.SelectedIndex = 0; // Selecciona el primer impuesto por defecto
+            cmbImpuesto.SelectedIndex = 0; 
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace GestorDeFormularios
             }
         }
 
-        //limpiar los campos
+       
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {

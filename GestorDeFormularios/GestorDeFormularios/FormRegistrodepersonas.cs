@@ -57,10 +57,10 @@ namespace GestorDeFormularios
 
         private void FrmRegistropersonas_Load(object sender, EventArgs e)
         {
-            //  12 columnas
+            
             dgvPersonas.ColumnCount = 12;
 
-            // Configurar los encabezados de las columnas
+            
             dgvPersonas.Columns[0].Name = "Nombre";
             dgvPersonas.Columns[1].Name = "Apellido";
             dgvPersonas.Columns[2].Name = "Cédula";
@@ -88,13 +88,13 @@ namespace GestorDeFormularios
 
         }
 
-        //limpiar los campos al hacer clic en el botón "Limpiar"
+        
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
         }
 
-        //eliminar la fila seleccionada al hacer clic en el botón "Eliminar"
+       
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
@@ -107,7 +107,7 @@ namespace GestorDeFormularios
                 MessageBox.Show("Debe seleccionar una fila para eliminarla.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        //ordenar por nombre al hacer clic en el botón "Ordenar"
+        
 
         private void btnOrdenar_Click(object sender, EventArgs e)
         {

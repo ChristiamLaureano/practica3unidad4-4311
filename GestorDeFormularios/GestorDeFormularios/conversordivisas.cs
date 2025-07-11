@@ -14,12 +14,12 @@ namespace GestorDeFormularios
     {
         Dictionary<string, double> tasas = new Dictionary<string, double>()
         {
-            { "USD", 1.0 }, // Dólar estadounidense
-            { "EUR", 0.92 }, // Euro
-            { "GBP", 0.78 }, // Libra esterlina
-            { "JPY", 157.0 }, // Yen japonés
-            { "CNY", 7.2 }, // Yuan chino
-            { "DOP", 59.85 }, // Peso dominicano   
+            { "USD", 1.0 },
+            { "EUR", 0.92 }, 
+            { "GBP", 0.78 }, 
+            { "JPY", 157.0 }, 
+            { "CNY", 7.2 }, 
+            { "DOP", 59.85 },    
         };
 
         public Conversordivisas()
